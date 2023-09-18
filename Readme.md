@@ -1,4 +1,7 @@
-```sh
+# Demo
+
+## Postgres using CLI
+```
           $ psql # will fail as the user is not created
 
 # create new database
@@ -63,8 +66,7 @@ test=#      \copy mystatement TO ./mystatemet.csv DELIMITER ',' CSV HEADER;
 
 ```
 
-[psycopg](https://www.psycopg.org/)
-
+## Postgres using Python Client (psycopg)
 ```sh
 pip install --upgrade pip
 pip install "psycopg[binary,pool]" fastapi python-decouple
@@ -74,3 +76,10 @@ uvicorn main:app --reload
 
 Open (http://127.0.0.1:8000/docs)[http://127.0.0.1:8000/docs]
 
+
+
+## Resources:
+[PostgreSQL](https://www.postgresql.org/)
+[PgAdmin - Postgres GUI](https://www.pgadmin.org/) 
+[psycopg (python lib for postgres adaptation)](https://www.psycopg.org/) 
+[FastAPI (python lib for Web server)](https://fastapi.tiangolo.com/) 
